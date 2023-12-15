@@ -1,0 +1,34 @@
+ h1 {
+     background-color: #fefefe;
+     border: 1px solid #000000;
+     border-radius: 5px;
+     padding: 10px;
+     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+     text-align: center;
+
+ }
+ body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+
+ .box{
+    font-size: large;
+     width: 100px;
+     height: 5px;
+     border: 5px solid black;
+     padding: 15px;
+     margin: 20px;
+ }
+
+ .containerclass{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+ }

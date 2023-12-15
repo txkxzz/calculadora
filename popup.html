@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" href="estilo.css">
+  <meta charset="UTF-8">
+  <title>Calculadora de volume de aquários</title>
+</head>
+
+<body>
+  <h1>Calculadora de volume de aquários</h1>
+  <p>O volume do aquário é de <span id="volume"></span> litros.</p>
+  <div class="containerclass">
+      <input class="box" type="text" name="comprimento" placeholder="Comprimento (cm)">
+
+      <input class="box" type="text" name="largura" placeholder="Largura (cm)">
+
+      <input class="box" type="text" name="altura" placeholder="Altura (cm)">
+
+  </div>
+  <button onclick="calcularVolume()">CALCULAR</button>
+
+</body>
+<script>
+  function calcularVolume() {
+    var comprimento = document.querySelector("input[name='comprimento']").value;
+    var largura = document.querySelector("input[name='largura']").value;
+    var altura = document.querySelector("input[name='altura']").value;
+
+    var volume = comprimento * largura * altura;
+
+    document.querySelector("#volume").innerText = volume;
+  }
+
+
+</script>
+
+</html>
